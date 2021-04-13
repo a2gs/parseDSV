@@ -40,7 +40,6 @@ function parseDSV()
 
 		for(i = 1; i <= NF; i++){
 			print "\t" i ": [" $i "]";
-				
 		}
 	}
 	END{
