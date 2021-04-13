@@ -30,7 +30,7 @@ function parseDSV()
 		return
 	fi
 
-	awk -v SEP=$2 'BEGIN{
+	awk -v SEP="$2" 'BEGIN{
 		FS=SEP;
 		print "File: [" ARGV[1] "] - Separator: [" FS "]";
 	}
